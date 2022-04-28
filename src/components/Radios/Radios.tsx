@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { FlexRowWrapper } from '../ui/Wrappers'
+import Highlights from './Highlights'
 import ReakitRadios from './ReakitRadios'
 
 export default function Radios() {
@@ -10,6 +11,7 @@ export default function Radios() {
       <FlexRowWrapper>
         <ReakitRadios />
       </FlexRowWrapper>
+      <Highlights />
     </>
   )
 }

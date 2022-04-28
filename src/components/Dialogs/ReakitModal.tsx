@@ -10,7 +10,7 @@ function ReakitModal() {
   return (
     <div>
       <DialogDisclosure {...dialog}>Open Reakit Modal</DialogDisclosure>
-      <DialogBackdrop {...dialog}>
+      <DialogBackdrop {...dialog} style={{ position: 'fixed', top: '10%', left: '50%' }}>
         <Dialog {...dialog} aria-label="Welcome">
           Welcome to Reakit!
           <button onClick={dialog.hide}>Close</button>

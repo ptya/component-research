@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { FlexRowWrapper } from '../ui/Wrappers'
+import Highlights from './Highligthst'
 import ReachAlert from './ReachAlert'
 
 export default function Snackbars() {
@@ -10,6 +11,7 @@ export default function Snackbars() {
       <FlexRowWrapper>
         <ReachAlert />
       </FlexRowWrapper>
+      <Highlights />
     </>
   )
 }

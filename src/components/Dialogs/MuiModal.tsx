@@ -26,6 +26,7 @@ export default function MuiModal() {
         open={open}
         onClose={handleClose}
         BackdropComponent={Backdrop}
+        style={{ position: 'fixed', top: '10%', left: '50%' }}
       >
         <div>
           <h2 id="unstyled-modal-title">Text in a modal</h2>

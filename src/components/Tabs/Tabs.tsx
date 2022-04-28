@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { FlexRowWrapper } from '../ui/Wrappers'
+import Highlights from './Highlights'
 import MuiTabs from './MuiTabs'
 import ReachTabs from './ReachTabs'
 import ReactTabs from './ReactTabs'
@@ -13,9 +14,10 @@ export default function Tabs() {
       <FlexRowWrapper>
         <ReachTabs />
         <ReakitTabs />
-        <ReactTabs />
         <MuiTabs />
+        <ReactTabs />
       </FlexRowWrapper>
+      <Highlights />
     </>
   )
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { FlexRowWrapper } from '../ui/Wrappers'
+import Highlights from './Highlights'
 import ReachCheckbox from './ReachCheckbox'
 import ReakitCheckbox from './ReakitCheckbox'
 
@@ -12,6 +13,7 @@ export default function Checkboxes() {
         <ReachCheckbox />
         <ReakitCheckbox />
       </FlexRowWrapper>
+      <Highlights />
     </>
   )
 }

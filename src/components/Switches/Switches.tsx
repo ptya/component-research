@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { FlexRowWrapper } from '../ui/Wrappers'
+import Highlights from './Highlights'
 import MuiSwitches from './MuiSwitches'
 
 export default function Switches() {
@@ -10,6 +11,7 @@ export default function Switches() {
       <FlexRowWrapper>
         <MuiSwitches />
       </FlexRowWrapper>
+      <Highlights />
     </>
   )
 }

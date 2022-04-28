@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { FlexRowWrapper } from '../ui/Wrappers'
+import Highlights from './Highlights'
 import MuiModal from './MuiModal'
 import ReachUiModal from './ReachUiModal'
 import ReactModal from './ReactModal'
@@ -12,10 +13,11 @@ function Dialogs() {
       <h2 id="dialogs">Dialogs</h2>
       <FlexRowWrapper>
         <ReachUiModal />
-        <ReactModal />
         <ReakitModal />
         <MuiModal />
+        <ReactModal />
       </FlexRowWrapper>
+      <Highlights />
     </>
   )
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { FlexRowWrapper } from '../ui/Wrappers'
+import Highlights from './Highlights'
 import ReachTooltip from './ReachTooltip'
 import ReakitTooltip from './ReakitTooltip'
 
@@ -12,6 +13,7 @@ export default function Tooltips() {
         <ReachTooltip />
         <ReakitTooltip />
       </FlexRowWrapper>
+      <Highlights />
     </>
   )
 }

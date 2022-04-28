@@ -1,6 +1,8 @@
 import * as React from 'react'
 
+import { Helmet } from 'react-helmet'
 import styled from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 
 import Checkboxes from '../components/Checkboxes'
 import Dialogs from '../components/Dialogs'
@@ -12,6 +14,27 @@ import Switches from '../components/Switches'
 import Tabs from '../components/Tabs'
 import TextFields from '../components/TextFields'
 import Tooltips from '../components/Tooltips'
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Open-Sans, Helvetica, Sans-Serif;
+  }
+
+  h1,h2,h3,p {
+    padding: 0;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1rem;
+  }
+`
 
 const PageWrapper = styled.div`
   margin: 20px;
@@ -30,6 +53,7 @@ const MenuWrapper = styled.aside`
   bottom: 0;
   padding: 10px;
   border-right: 1px solid #111;
+  background-color: inherit;
 `
 
 const MenuList = styled.ul`
@@ -47,8 +71,15 @@ const Content = styled.main``
 function IndexPage() {
   return (
     <PageWrapper>
+      <GlobalStyle />
+      <Helmet>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css"
+        />
+      </Helmet>
       <MenuWrapper>
-        <p>Available components</p>
+        <h2>Available components</h2>
         <MenuList>
           <li>
             <a href="#dialogs">Dialogs</a>

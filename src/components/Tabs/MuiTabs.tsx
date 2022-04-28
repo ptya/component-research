@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 
 import TabPanelUnstyled from '@mui/base/TabPanelUnstyled'
 import TabsListUnstyled from '@mui/base/TabsListUnstyled'
